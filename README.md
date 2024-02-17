@@ -50,3 +50,12 @@ Rozliczenia:
 opłaty naliczone na poszczególne dzieci wraz z czasem jaki spędziły w szkole.
 
 Rodzaj i ilość testów automatycznych wg Twojego uznania .
+
+
+### Notatki:
+Wymagania wynikajace z opisu domeny:
+
+1. Na jedno dziecko przypada jeden zarejestrowany rodzic
+2. Jedno dziecko chodzi do jednej szkoly
+
+Do wyeliminowania tych obostrzen potrzeb tablic posredniczacych stad lub zmiany obecnej domeny

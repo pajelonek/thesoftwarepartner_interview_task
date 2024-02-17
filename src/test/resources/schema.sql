@@ -1,0 +1,29 @@
+CREATE TABLE IF NOT EXISTS School (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    hour_price DECIMAL(10, 2) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Parent (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    firstname VARCHAR(255) NOT NULL,
+    lastname VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Child (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    firstname VARCHAR(255) NOT NULL,
+    lastname VARCHAR(255) NOT NULL,
+    parent_id BIGINT NOT NULL,
+    school_id BIGINT NOT NULL,
+    FOREIGN KEY (parent_id) REFERENCES Parent(id),
+    FOREIGN KEY (school_id) REFERENCES School(id)
+);
+
+CREATE TABLE IF NOT EXISTS Attendance (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    child_id BIGINT NOT NULL,
+    entry_date TIMESTAMP NOT NULL,
+    exit_date TIMESTAMP NOT NULL,
+    FOREIGN KEY (child_id) REFERENCES Child(id)
+);
