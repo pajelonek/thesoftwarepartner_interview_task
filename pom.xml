@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>org.github.pajelonek.softwarepartner</groupId>
 	<artifactId>school-biiling-api</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>school-biiling-api</name>
 	<description>API for school billing</description>
 	<properties>

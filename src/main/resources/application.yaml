@@ -16,5 +16,10 @@ spring:
       ddl-auto: update
     show-sql: 'true'
 
+billing:
+  periods:
+    free-start-time: '07:00'
+    free-end-time: '12:00'
+
 server:
   port: 8080

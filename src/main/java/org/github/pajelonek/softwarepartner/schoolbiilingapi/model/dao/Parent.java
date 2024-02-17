@@ -15,6 +15,15 @@ public class Parent {
     private String firstname;
     private String lastname;
 
-    @OneToMany(mappedBy = "parent")
+    @OneToMany(mappedBy = "parent", fetch = FetchType.EAGER)
     private List<Child> children;
+
+    @Override
+    public String toString() {
+        return "Parent{" +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                '}';
+    }
 }

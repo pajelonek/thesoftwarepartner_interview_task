@@ -9,3 +9,4 @@ INSERT INTO Child (firstname, lastname, parent_id, school_id) VALUES ('Ewa', 'No
 
 INSERT INTO Attendance (child_id, entry_date, exit_date) VALUES (1, '2024-02-15 08:00:00', '2024-02-15 12:00:00');
 INSERT INTO Attendance (child_id, entry_date, exit_date) VALUES (2, '2024-02-15 07:30:00', '2024-02-15 12:30:00');
+INSERT INTO Attendance (child_id, entry_date, exit_date) VALUES (2, '2024-02-15 06:59:00', '2024-02-15 12:01:00');

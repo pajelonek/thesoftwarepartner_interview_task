@@ -15,6 +15,6 @@ public class School {
     private String name;
     private BigDecimal hourPrice;
 
-    @OneToMany(mappedBy = "school")
+    @OneToMany(mappedBy = "school", fetch = FetchType.LAZY)
     private List<Child> children;
 }
